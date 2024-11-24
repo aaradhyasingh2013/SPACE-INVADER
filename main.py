@@ -25,6 +25,21 @@ enemyY=[]
 ememyX_change=[]
 enemyY_change=[]
 num_of_enemies= 6
+for _i in range(num_of_enemies):
+    ennemyImg.append(pygame.image.load('crab.png'))
+    enemyX.append(random.randit(0,SCREEN_WIDTH- 64))# 64
+    enemyY.append(random.randit(ENEMY_START_Y_MIN,ENEMY_START_Y_MAX))
+    enemyX_change.append(ENEMY_SPEED_X)
+    enemyY_change.append(ENEMY_SPEED_Y)
+bulletImg= pygame.image.load('bulet.png')
+bulletX= 0
+bulletY= PLAYER_START_Y
+bulletX_change= BULLET_SPEED_Y
+bullet_state= "ready"
+score_value= 0
+front= pygame.font.Font('freesansbold.ttf',32)
+textX= 10
+textY= 10
 
 
 
